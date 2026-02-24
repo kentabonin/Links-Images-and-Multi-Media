@@ -9,6 +9,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            padding: 20px;
         }
 
         .responsive-img {
@@ -22,6 +23,11 @@
             max-width: 600px;
             aspect-ratio: 16/9;
         }
+
+        .responsive-audio {
+            width: 100%;
+            max-width: 400px;
+        }
     </style>
 </head>
 
@@ -30,17 +36,23 @@
     <h1>Chapter 3</h1>
     <p>Working with Links, Images and Multimedia</p>
 
-    <p><strong>Hyperlink :</strong></p>
-    <a href="https://www.youtube.com" target="_blank">
+    <hr>
+
+    <p><strong>Hyperlink Example:</strong></p>
+    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
         Go to Youtube
     </a>
 
-    <p><strong>Image :</strong></p>
+    <hr>
+
+    <p><strong>Image Example:</strong></p>
     <img src="https://images.squarespace-cdn.com/content/v1/607f89e638219e13eee71b1e/1684821560422-SD5V37BAG28BURTLIXUQ/michael-sum-LEpfefQf4rU-unsplash.jpg"
          alt="Orange Cat"
          class="responsive-img">
 
-    <p><strong>Video :</strong></p>
+    <hr>
+
+    <p><strong>Video Example:</strong></p>
     <iframe class="responsive-video"
         src="https://www.youtube-nocookie.com/embed/4dDt5OxKR2M"
         title="YouTube video player"
@@ -48,6 +60,13 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
     </iframe>
+
+    <hr>
+
+    <p><strong>Audio:</strong></p>
+    <audio controls class="responsive-audio">
+        <source src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" type="audio/mpeg">
+    </audio>
 
 </body>
 </html>
